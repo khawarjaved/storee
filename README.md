@@ -1,1 +1,1 @@
-# storee
+# store-app
