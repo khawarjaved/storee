@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, StyleSheet, FlatList } from "react-native";
+import { View, StyleSheet, FlatList, Text } from "react-native";
 import { Header, ListItem } from "react-native-elements";
 import { db } from "../config";
 
@@ -29,6 +29,7 @@ export default class HomeScreen extends Component {
     return (
       <View>
         <Header />
+        <Text>Khawar APP</Text>
         <FlatList
           style={styles.list}
           keyExtractor={this.keyExtractor}

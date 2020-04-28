@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "store-app",
-    "slug": "store-app",
+    "name": "storee",
+    "slug": "storee",
     "platforms": [
       "ios",
       "android",

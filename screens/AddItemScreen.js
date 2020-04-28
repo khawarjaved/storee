@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { View, StyleSheet } from "react-native";
-import { Header, Input, Button } from "react-native-elements";
+import { Header, Input } from "react-native-elements";
+import { Button } from 'react-native-paper';
 import { db } from "../config";
 
 let addItem = (item) => {
@@ -26,11 +27,14 @@ export default class AddItemScreen extends Component {
         <Header />
         <Input
           style={styles.input}
-          placeholder="Add item"
+          placeholder="Add item 1"
           onChangeText={(text) => this.setState({ text })}
           value={this.state.text}
         />
-        <Button type="clear" onPress={() => this.submit()} title="Save" />
+
+        <Button icon="camera" mode="contained" onPress={() => this.submit()}>
+    Press me
+  </Button>
       </View>
     );
   }

@@ -7,8 +7,8 @@ export default class MyComponent extends React.Component {
   state = {
     index: 0,
     routes: [
-      { key: "list", title: "List", icon: "book" },
-      { key: "add", title: "Add", icon: "edit" },
+      { key: "list", title: "List 1", icon: "book" },
+      { key: "add", title: "Add 2", icon: "edit" },
     ],
   };
 
