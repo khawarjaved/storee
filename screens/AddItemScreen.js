@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, StyleSheet } from "react-native";
 import { Header } from "react-native-elements";
-import { Button,TextInput,RadioButton,Text  } from 'react-native-paper';
+import { Button,TextInput,RadioButton,Text,Searchbar,searchQuery  } from 'react-native-paper';
 import { db } from "../config";
 
 let addItem = (item) => {
@@ -40,6 +40,11 @@ export default class AddItemScreen extends Component {
   <Button icon="camera"onPress={() => this.submit()}>
   Click me
 </Button>
+<Searchbar
+        placeholder="Search"
+        onChangeText={this._onChangeSearch}
+        value={searchQuery}
+      />
       </View>
     );
   }
