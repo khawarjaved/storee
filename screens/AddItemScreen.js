@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, StyleSheet } from "react-native";
 import { Header } from "react-native-elements";
-import { Button,TextInput,RadioButton  } from 'react-native-paper';
+import { Button,TextInput,RadioButton,Text  } from 'react-native-paper';
 import { db } from "../config";
 
 let addItem = (item) => {
@@ -23,7 +23,7 @@ export default class AddItemScreen extends Component {
   };
 
   render() {
-    const { checked } = this.state;
+
     return (
       <View>
         <Header />
@@ -33,11 +33,7 @@ export default class AddItemScreen extends Component {
           onChangeText={(text) => this.setState({ text })}
           value={this.state.text}
         />
-<RadioButton
-          value="first"
-          status={checked === 'first' ? 'checked' : 'unchecked'}
-          onPress={() => { this.setState({ checked: 'first' }); }}
-        />
+
         <Button icon="camera" mode="contained" onPress={() => this.submit()}>
     Press me
   </Button>
