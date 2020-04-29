@@ -37,6 +37,9 @@ export default class AddItemScreen extends Component {
         <Button icon="camera" mode="contained" onPress={() => this.submit()}>
     Press me
   </Button>
+  <Button icon="camera"onPress={() => this.submit()}>
+  Click me
+</Button>
       </View>
     );
   }
